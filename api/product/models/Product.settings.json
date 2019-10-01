@@ -1,19 +1,22 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "product",
   "info": {
     "name": "product",
     "description": ""
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "name": {
       "type": "string"
     },
     "price": {
-      "type": "integer"
+      "type": "decimal"
     },
     "description": {
       "type": "richtext"
