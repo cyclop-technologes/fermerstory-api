@@ -146,8 +146,9 @@ Not suffix or eq: Equals
 `/products?name=Капуста` or  `/products?name_eq=Капуста`
 
 Найти товар с ценой больше или равной 500
+
 `/products?price_gte=500`
 
 Найти несколько фермеров с id 5d336e1387a66b1710fe7faf, 5d336e1387a66b1710fe7fb0, 5d336e1387a66b1710fe7fb2
 
-`fermers?id_in=5d336e1387a66b1710fe7faf&id_in=5d336e1387a66b1710fe7fb0&id_in=5d336e1387a66b1710fe7fb2`
+`/fermers?id_in=5d336e1387a66b1710fe7faf&id_in=5d336e1387a66b1710fe7fb0&id_in=5d336e1387a66b1710fe7fb2`
