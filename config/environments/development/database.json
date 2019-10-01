@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "database": "fermerstory",
+        "host": "ds039417.mlab.com",
+        "srv": false,
+        "port": "39417",
+        "username": "${process.env.DB_USERNAME}",
+        "password": "${process.env.DB_PASSWORD}"
+      },
+      "options": {
+        "authenticationDatabase": "fermerstory"
+      }
+    }
+  }
+}

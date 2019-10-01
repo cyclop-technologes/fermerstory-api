@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "farmer",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "about": {
+      "type": "richtext"
+    },
+    "products": {
+      "collection": "product",
+      "via": "farmer"
+    }
+  }
+}

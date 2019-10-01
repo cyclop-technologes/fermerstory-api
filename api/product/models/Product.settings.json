@@ -1,0 +1,50 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "calories": {
+      "type": "integer"
+    },
+    "fat": {
+      "type": "decimal"
+    },
+    "carbohydrate": {
+      "type": "decimal"
+    },
+    "protein": {
+      "type": "decimal"
+    },
+    "stocked": {
+      "default": true,
+      "type": "boolean"
+    },
+    "farmer": {
+      "model": "farmer",
+      "via": "products"
+    }
+  }
+}
