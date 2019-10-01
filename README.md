@@ -127,18 +127,18 @@ Response:
 
 Not suffix or eq: Equals
 
-- ne: Not equals
-- lt: Lower than
-- gt: Greater than
-- lte: Lower than or equal to
-- gte: Greater than or equal to
-- in: Included in an array of values
-- nin: Isn't included in an array of values
-- contains: Contains
-- ncontains: Doesn't contain
-- containss: Contains case sensitive
-- ncontainss: Doesn't contain case sensitive
-- null: Is null/Is not null
+- `ne`: Not equals
+- `lt`: Lower than
+- `gt`: Greater than
+- `lte`: Lower than or equal to
+- `gte`: Greater than or equal to
+- `in`: Included in an array of values
+- `nin`: Isn't included in an array of values
+- `contains`: Contains
+- `ncontains`: Doesn't contain
+- `containss`: Contains case sensitive
+- `ncontainss`: Doesn't contain case sensitive
+- `null`: Is null/Is not null
 
 ## Примеры
 
