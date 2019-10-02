@@ -125,8 +125,9 @@ Response:
 
 ## Фильтры
 
-Not suffix or eq: Equals
+Filters are used as a suffix of a field name:
 
+- Not suffix or `eq`: Equals
 - `ne`: Not equals
 - `lt`: Lower than
 - `gt`: Greater than
