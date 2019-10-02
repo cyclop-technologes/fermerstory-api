@@ -4,7 +4,7 @@
 2. [Продукты](#Продукты)
 3. [Фильтры](#Фильтры)
 
-URL: `https://fermerstory-api.herokuapp.com`
+URL: `http://api.ferm.store`
 
 ## Фермеры
 
