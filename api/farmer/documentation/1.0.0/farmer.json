@@ -587,6 +587,9 @@
                 "price": {
                   "type": "number"
                 },
+                "category": {
+                  "type": "string"
+                },
                 "description": {
                   "type": "string"
                 },
