@@ -12,6 +12,9 @@
     "name": {
       "type": "string"
     },
+    "location": {
+      "type": "string"
+    },
     "photo": {
       "collection": "file",
       "via": "related",

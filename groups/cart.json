@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "cart",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_carts",
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "product": {
+      "model": "product"
+    }
+  }
+}

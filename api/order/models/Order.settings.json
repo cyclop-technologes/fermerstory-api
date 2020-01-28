@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "order",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "paymantOnline": {
+      "type": "boolean"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "amount": {
+      "type": "integer",
+      "required": true
+    },
+    "delivery": {
+      "type": "boolean"
+    },
+    "store": {
+      "type": "string"
+    },
+    "products": {
+      "group": "cart",
+      "repeatable": true,
+      "required": true,
+      "type": "group"
+    }
+  }
+}

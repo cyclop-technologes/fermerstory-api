@@ -519,6 +519,9 @@
           "name": {
             "type": "string"
           },
+          "location": {
+            "type": "string"
+          },
           "photo": {
             "type": "array",
             "items": {
@@ -628,6 +631,9 @@
       "NewFarmer": {
         "properties": {
           "name": {
+            "type": "string"
+          },
+          "location": {
             "type": "string"
           },
           "about": {

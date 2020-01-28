@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/products": {
+    "/orders": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Product"
+                    "$ref": "#/components/schemas/Order"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Order"
         ],
         "parameters": [
           {
@@ -195,7 +195,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -233,7 +233,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Order"
         ],
         "requestBody": {
           "description": "",
@@ -241,14 +241,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduct"
+                "$ref": "#/components/schemas/NewOrder"
               }
             }
           }
         }
       }
     },
-    "/products/count": {
+    "/orders/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -300,12 +300,12 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Order"
         ],
         "parameters": []
       }
     },
-    "/products/{id}": {
+    "/orders/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -315,7 +315,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -353,7 +353,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Order"
         ],
         "parameters": [
           {
@@ -377,7 +377,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -415,7 +415,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Order"
         ],
         "requestBody": {
           "description": "",
@@ -423,7 +423,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduct"
+                "$ref": "#/components/schemas/NewOrder"
               }
             }
           }
@@ -489,7 +489,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Order"
         ],
         "parameters": [
           {
@@ -508,9 +508,13 @@
   },
   "components": {
     "schemas": {
-      "Product": {
+      "Order": {
         "required": [
-          "id"
+          "id",
+          "name",
+          "phone",
+          "amount",
+          "products"
         ],
         "properties": {
           "id": {
@@ -519,177 +523,204 @@
           "name": {
             "type": "string"
           },
-          "price": {
-            "type": "number"
-          },
-          "category": {
-            "type": "string",
-            "default": "наборы",
-            "enum": [
-              "наборы",
-              "овощи",
-              "фрукты",
-              "экзотика",
-              "молочка и яйца",
-              "сыры",
-              "мясо и колбасы",
-              "хлеб",
-              "бакалея",
-              "полуфабрикаты"
-            ]
-          },
-          "description": {
+          "phone": {
             "type": "string"
           },
-          "photo": {
+          "email": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "paymantOnline": {
+            "type": "boolean"
+          },
+          "paid": {
+            "type": "boolean"
+          },
+          "amount": {
+            "type": "integer"
+          },
+          "delivery": {
+            "type": "boolean"
+          },
+          "store": {
+            "type": "string"
+          },
+          "products": {
             "type": "array",
             "items": {
+              "type": "object",
               "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
-                  "type": "string"
+                "quantity": {
+                  "type": "integer"
                 },
-                "hash": {
-                  "type": "string"
-                },
-                "sha256": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "string"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "public_id": {
-                  "type": "string"
-                },
-                "related": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "weight": {
-            "type": "integer"
-          },
-          "calories": {
-            "type": "integer"
-          },
-          "fat": {
-            "type": "number"
-          },
-          "carbohydrate": {
-            "type": "number"
-          },
-          "protein": {
-            "type": "number"
-          },
-          "stocked": {
-            "type": "boolean",
-            "default": true
-          },
-          "farmer": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "location": {
-                "type": "string"
-              },
-              "photo": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "about": {
-                "type": "string"
-              },
-              "products": {
-                "type": "array",
-                "items": {
-                  "type": "string"
+                "product": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "weight": {
+                      "type": "integer"
+                    },
+                    "calories": {
+                      "type": "integer"
+                    },
+                    "fat": {
+                      "type": "number"
+                    },
+                    "carbohydrate": {
+                      "type": "number"
+                    },
+                    "protein": {
+                      "type": "number"
+                    },
+                    "stocked": {
+                      "type": "boolean"
+                    },
+                    "farmer": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
           }
         }
       },
-      "NewProduct": {
+      "NewOrder": {
+        "required": [
+          "name",
+          "phone",
+          "amount",
+          "products"
+        ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "price": {
-            "type": "number"
-          },
-          "category": {
-            "type": "string",
-            "default": "наборы",
-            "enum": [
-              "наборы",
-              "овощи",
-              "фрукты",
-              "экзотика",
-              "молочка и яйца",
-              "сыры",
-              "мясо и колбасы",
-              "хлеб",
-              "бакалея",
-              "полуфабрикаты"
-            ]
-          },
-          "description": {
+          "phone": {
             "type": "string"
           },
-          "weight": {
-            "type": "integer"
-          },
-          "calories": {
-            "type": "integer"
-          },
-          "fat": {
-            "type": "number"
-          },
-          "carbohydrate": {
-            "type": "number"
-          },
-          "protein": {
-            "type": "number"
-          },
-          "stocked": {
-            "type": "boolean",
-            "default": true
-          },
-          "farmer": {
+          "email": {
             "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "paymantOnline": {
+            "type": "boolean"
+          },
+          "paid": {
+            "type": "boolean"
+          },
+          "amount": {
+            "type": "integer"
+          },
+          "delivery": {
+            "type": "boolean"
+          },
+          "store": {
+            "type": "string"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "product": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "weight": {
+                      "type": "integer"
+                    },
+                    "calories": {
+                      "type": "integer"
+                    },
+                    "fat": {
+                      "type": "number"
+                    },
+                    "carbohydrate": {
+                      "type": "number"
+                    },
+                    "protein": {
+                      "type": "number"
+                    },
+                    "stocked": {
+                      "type": "boolean"
+                    },
+                    "farmer": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -697,7 +728,7 @@
   },
   "tags": [
     {
-      "name": "Product"
+      "name": "Order"
     }
   ]
 }
