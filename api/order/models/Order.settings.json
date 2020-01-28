@@ -48,7 +48,6 @@
     "products": {
       "group": "cart",
       "repeatable": true,
-      "required": true,
       "type": "group"
     }
   }

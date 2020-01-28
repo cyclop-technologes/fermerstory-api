@@ -513,8 +513,7 @@
           "id",
           "name",
           "phone",
-          "amount",
-          "products"
+          "amount"
         ],
         "properties": {
           "id": {
@@ -622,8 +621,7 @@
         "required": [
           "name",
           "phone",
-          "amount",
-          "products"
+          "amount"
         ],
         "properties": {
           "name": {
