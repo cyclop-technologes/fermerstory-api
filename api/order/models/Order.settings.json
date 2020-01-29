@@ -27,7 +27,7 @@
       "type": "string"
     },
     "date": {
-      "type": "date"
+      "type": "datetime"
     },
     "paymantOnline": {
       "type": "boolean"
@@ -46,9 +46,9 @@
       "type": "string"
     },
     "products": {
-      "group": "cart",
+      "component": "cart.product",
       "repeatable": true,
-      "type": "group"
+      "type": "component"
     }
   }
 }
