@@ -48,6 +48,10 @@
     "farmer": {
       "model": "farmer",
       "via": "products"
+    },
+    "category": {
+      "via": "products",
+      "model": "category"
     }
   }
 }

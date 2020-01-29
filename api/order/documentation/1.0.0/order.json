@@ -170,7 +170,10 @@
             "required": false,
             "description": "Get records that matches any value in the array of values",
             "schema": {
-              "type": "array"
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             },
             "deprecated": false
           },
@@ -180,7 +183,10 @@
             "required": false,
             "description": "Get records that doesn't match any value in the array of values",
             "schema": {
-              "type": "array"
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             },
             "deprecated": false
           }
@@ -532,7 +538,7 @@
             "type": "string"
           },
           "date": {
-            "type": "string"
+            "type": "datetime"
           },
           "paymantOnline": {
             "type": "boolean"
@@ -577,9 +583,6 @@
                     "price": {
                       "type": "number"
                     },
-                    "category": {
-                      "type": "string"
-                    },
                     "description": {
                       "type": "string"
                     },
@@ -608,6 +611,9 @@
                       "type": "boolean"
                     },
                     "farmer": {
+                      "type": "string"
+                    },
+                    "category": {
                       "type": "string"
                     }
                   }
@@ -637,7 +643,7 @@
             "type": "string"
           },
           "date": {
-            "type": "string"
+            "type": "datetime"
           },
           "paymantOnline": {
             "type": "boolean"
@@ -682,9 +688,6 @@
                     "price": {
                       "type": "number"
                     },
-                    "category": {
-                      "type": "string"
-                    },
                     "description": {
                       "type": "string"
                     },
@@ -713,6 +716,9 @@
                       "type": "boolean"
                     },
                     "farmer": {
+                      "type": "string"
+                    },
+                    "category": {
                       "type": "string"
                     }
                   }
