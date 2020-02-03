@@ -49,6 +49,9 @@
       "component": "cart.product",
       "repeatable": true,
       "type": "component"
+    },
+    "orderId": {
+      "type": "string"
     }
   }
 }

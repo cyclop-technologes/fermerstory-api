@@ -620,6 +620,9 @@
                 }
               }
             }
+          },
+          "orderId": {
+            "type": "string"
           }
         }
       },
@@ -725,6 +728,9 @@
                 }
               }
             }
+          },
+          "orderId": {
+            "type": "string"
           }
         }
       }
