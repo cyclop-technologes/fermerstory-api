@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/orders": {
+    "/subscribers": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the subscribers's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve subscribers document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Order"
+                    "$ref": "#/components/schemas/Subscribers"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Subscribers"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new subscribers record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve subscribers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Order"
+                  "$ref": "#/components/schemas/Subscribers"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Subscribers"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOrder"
+                "$ref": "#/components/schemas/NewSubscribers"
               }
             }
           }
         }
       }
     },
-    "/orders/count": {
+    "/subscribers/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the numver of subscribers documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve subscribers document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Subscribers"
         ],
         "parameters": []
       }
     },
-    "/orders/{id}": {
+    "/subscribers/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one subscribers record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve subscribers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Order"
+                  "$ref": "#/components/schemas/Subscribers"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Subscribers"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single subscribers record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve subscribers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Order"
+                  "$ref": "#/components/schemas/Subscribers"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Subscribers"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOrder"
+                "$ref": "#/components/schemas/NewSubscribers"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single subscribers record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single subscribers based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Subscribers"
         ],
         "parameters": [
           {
@@ -514,243 +514,27 @@
   },
   "components": {
     "schemas": {
-      "Order": {
+      "Subscribers": {
         "required": [
           "id",
-          "name",
-          "phone",
-          "amount"
+          "email"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
-            "type": "string"
-          },
-          "phone": {
-            "type": "string"
-          },
           "email": {
             "type": "string"
-          },
-          "address": {
-            "type": "string"
-          },
-          "date": {
-            "type": "datetime"
-          },
-          "paymantOnline": {
-            "type": "boolean"
-          },
-          "paid": {
-            "type": "boolean"
-          },
-          "amount": {
-            "type": "integer"
-          },
-          "delivery": {
-            "type": "boolean"
-          },
-          "store": {
-            "type": "string"
-          },
-          "products": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "quantity": {
-                  "type": "integer"
-                },
-                "product": {
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "price": {
-                      "type": "number"
-                    },
-                    "description": {
-                      "type": "string"
-                    },
-                    "photo": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    },
-                    "weight": {
-                      "type": "integer"
-                    },
-                    "calories": {
-                      "type": "integer"
-                    },
-                    "fat": {
-                      "type": "number"
-                    },
-                    "carbohydrate": {
-                      "type": "number"
-                    },
-                    "protein": {
-                      "type": "number"
-                    },
-                    "stocked": {
-                      "type": "boolean"
-                    },
-                    "farmer": {
-                      "type": "string"
-                    },
-                    "category": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "orderId": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string",
-            "default": "в обработке",
-            "enum": [
-              "в обработке",
-              "исполняется",
-              "выполнен",
-              "отменен"
-            ]
           }
         }
       },
-      "NewOrder": {
+      "NewSubscribers": {
         "required": [
-          "name",
-          "phone",
-          "amount"
+          "email"
         ],
         "properties": {
-          "name": {
-            "type": "string"
-          },
-          "phone": {
-            "type": "string"
-          },
           "email": {
             "type": "string"
-          },
-          "address": {
-            "type": "string"
-          },
-          "date": {
-            "type": "datetime"
-          },
-          "paymantOnline": {
-            "type": "boolean"
-          },
-          "paid": {
-            "type": "boolean"
-          },
-          "amount": {
-            "type": "integer"
-          },
-          "delivery": {
-            "type": "boolean"
-          },
-          "store": {
-            "type": "string"
-          },
-          "products": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "quantity": {
-                  "type": "integer"
-                },
-                "product": {
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "price": {
-                      "type": "number"
-                    },
-                    "description": {
-                      "type": "string"
-                    },
-                    "photo": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    },
-                    "weight": {
-                      "type": "integer"
-                    },
-                    "calories": {
-                      "type": "integer"
-                    },
-                    "fat": {
-                      "type": "number"
-                    },
-                    "carbohydrate": {
-                      "type": "number"
-                    },
-                    "protein": {
-                      "type": "number"
-                    },
-                    "stocked": {
-                      "type": "boolean"
-                    },
-                    "farmer": {
-                      "type": "string"
-                    },
-                    "category": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "orderId": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string",
-            "default": "в обработке",
-            "enum": [
-              "в обработке",
-              "исполняется",
-              "выполнен",
-              "отменен"
-            ]
           }
         }
       }
@@ -758,7 +542,7 @@
   },
   "tags": [
     {
-      "name": "Order"
+      "name": "Subscribers"
     }
   ]
 }

@@ -18,6 +18,7 @@
     "eslint-plugin-react": "^7.14.0"
   },
   "dependencies": {
+    "mongoose-simple-random": "^0.4.1",
     "strapi": "3.0.0-beta.18.3",
     "strapi-admin": "3.0.0-beta.18.3",
     "strapi-connector-mongoose": "3.0.0-beta.18.3",
@@ -25,7 +26,6 @@
     "strapi-plugin-content-type-builder": "3.0.0-beta.18.3",
     "strapi-plugin-documentation": "3.0.0-beta.18.3",
     "strapi-plugin-email": "3.0.0-beta.18.3",
-    "strapi-plugin-graphql": "3.0.0-beta.18.3",
     "strapi-plugin-upload": "3.0.0-beta.18.3",
     "strapi-plugin-users-permissions": "3.0.0-beta.18.3",
     "strapi-provider-upload-cloudinary": "^3.0.0-alpha.15",

@@ -1,0 +1,18 @@
+{
+  "info": {
+    "name": "subscribers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "subscribers"
+}
