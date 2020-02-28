@@ -24,7 +24,8 @@
     "photo": {
       "collection": "file",
       "via": "related",
-      "plugin": "upload"
+      "plugin": "upload",
+      "required": false
     },
     "weight": {
       "type": "integer"
@@ -50,8 +51,12 @@
       "via": "products"
     },
     "category": {
-      "via": "products",
-      "model": "category"
+      "model": "category",
+      "via": "products"
+    },
+    "sale": {
+      "max": 100,
+      "type": "integer"
     }
   }
 }

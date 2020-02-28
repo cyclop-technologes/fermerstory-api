@@ -24,8 +24,8 @@
       "type": "richtext"
     },
     "products": {
-      "collection": "product",
-      "via": "farmer"
+      "via": "farmer",
+      "collection": "product"
     }
   }
 }

@@ -628,6 +628,9 @@
                 },
                 "category": {
                   "type": "string"
+                },
+                "sale": {
+                  "type": "integer"
                 }
               }
             }
