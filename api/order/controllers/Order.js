@@ -16,14 +16,14 @@
      }
 
     if (entry.email) {
-      const products = entry.products.map(el => `${el.product.name} x${el.quantity}шт.`)
+      const products = entry.products.map(el => `<p>${el.product.name} – ${el.quantity}шт.</p>`)
       await strapi.plugins['email'].services.email.send({
         to: entry.email,
         from: 'info@ferm.store',
-        subject: 'Закак #' + entry.id.slice(18).toUpperCase(),
-        text: `
-          Закакз #${entry.id.slice(18).toUpperCase()} уже собирается.
-          ${products.join('\n')}
+        subject: 'Заказ #' + entry.id.slice(18).toUpperCase(),
+        html: `
+          <h3>Ваш заказ #${entry.id.slice(18).toUpperCase()} уже собирается.</h3>
+          ${products.join()}
         `,
       });
     }
