@@ -576,6 +576,9 @@
                 },
                 "sale": {
                   "type": "integer"
+                },
+                "slug": {
+                  "type": "uid"
                 }
               }
             }

@@ -651,6 +651,9 @@
           },
           "sale": {
             "type": "integer"
+          },
+          "slug": {
+            "type": "uid"
           }
         }
       },
@@ -692,6 +695,9 @@
           },
           "sale": {
             "type": "integer"
+          },
+          "slug": {
+            "type": "uid"
           }
         }
       }
