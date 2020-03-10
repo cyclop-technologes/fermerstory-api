@@ -23,7 +23,7 @@
         subject: 'Заказ #' + entry.id.slice(18).toUpperCase(),
         html: `
           <h3>Ваш заказ #${entry.id.slice(18).toUpperCase()} уже собирается.</h3>
-          ${products.join(" ")}
+          ${products.join()}
         `,
       });
     }
