@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "comments",
+  "info": {
+    "name": "comment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "comments"
+    },
+    "product": {
+      "model": "product",
+      "via": "comments"
+    },
+    "text": {
+      "type": "text"
+    },
+    "rate": {
+      "type": "integer",
+      "max": 5,
+      "required": true,
+      "min": 1
+    }
+  }
+}

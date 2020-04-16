@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "order",
   "info": {
@@ -55,8 +56,18 @@
     },
     "status": {
       "type": "enumeration",
-      "enum": ["в обработке", "исполняется", "выполнен", "отменен"],
+      "enum": [
+        "в обработке",
+        "исполняется",
+        "выполнен",
+        "отменен"
+      ],
       "default": "в обработке"
+    },
+    "users": {
+      "via": "orders",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }
