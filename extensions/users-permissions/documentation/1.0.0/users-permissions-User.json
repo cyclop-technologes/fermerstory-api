@@ -1355,6 +1355,9 @@
               },
               "sale": {
                 "type": "integer"
+              },
+              "comment": {
+                "type": "string"
               }
             }
           },
@@ -1375,6 +1378,9 @@
                   "type": "integer"
                 },
                 "text": {
+                  "type": "string"
+                },
+                "product": {
                   "type": "string"
                 }
               }

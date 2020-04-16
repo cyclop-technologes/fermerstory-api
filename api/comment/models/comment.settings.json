@@ -20,6 +20,10 @@
     },
     "text": {
       "type": "text"
+    },
+    "product": {
+      "model": "product",
+      "via": "comment"
     }
   }
 }

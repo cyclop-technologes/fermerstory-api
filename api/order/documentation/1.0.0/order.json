@@ -618,6 +618,9 @@
                     },
                     "sale": {
                       "type": "integer"
+                    },
+                    "comment": {
+                      "type": "string"
                     }
                   }
                 }
@@ -793,6 +796,9 @@
                     },
                     "sale": {
                       "type": "integer"
+                    },
+                    "comment": {
+                      "type": "string"
                     }
                   }
                 }

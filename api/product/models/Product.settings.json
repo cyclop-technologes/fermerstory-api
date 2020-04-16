@@ -58,6 +58,10 @@
     "sale": {
       "max": 100,
       "type": "integer"
+    },
+    "comment": {
+      "via": "product",
+      "model": "comment"
     }
   }
 }

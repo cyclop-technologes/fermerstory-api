@@ -651,6 +651,28 @@
           },
           "sale": {
             "type": "integer"
+          },
+          "comment": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "rating": {
+                "type": "integer"
+              },
+              "text": {
+                "type": "string"
+              },
+              "product": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -692,6 +714,9 @@
           },
           "sale": {
             "type": "integer"
+          },
+          "comment": {
+            "type": "string"
           }
         }
       }

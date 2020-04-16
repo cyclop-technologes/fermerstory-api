@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/16/2020 3:49:05 PM"
+    "x-generation-date": "04/16/2020 5:07:41 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5330,6 +5330,9 @@
                 },
                 "sale": {
                   "type": "integer"
+                },
+                "comment": {
+                  "type": "string"
                 }
               }
             }
@@ -5413,6 +5416,61 @@
           },
           "text": {
             "type": "string"
+          },
+          "product": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "price": {
+                "type": "number"
+              },
+              "description": {
+                "type": "string"
+              },
+              "photo": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "weight": {
+                "type": "integer"
+              },
+              "calories": {
+                "type": "integer"
+              },
+              "fat": {
+                "type": "number"
+              },
+              "carbohydrate": {
+                "type": "number"
+              },
+              "protein": {
+                "type": "number"
+              },
+              "stocked": {
+                "type": "boolean"
+              },
+              "farmer": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "sale": {
+                "type": "integer"
+              },
+              "comment": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -5425,6 +5483,9 @@
             "type": "integer"
           },
           "text": {
+            "type": "string"
+          },
+          "product": {
             "type": "string"
           }
         }
@@ -5546,6 +5607,9 @@
                 },
                 "sale": {
                   "type": "integer"
+                },
+                "comment": {
+                  "type": "string"
                 }
               }
             }
@@ -5675,6 +5739,9 @@
                     },
                     "sale": {
                       "type": "integer"
+                    },
+                    "comment": {
+                      "type": "string"
                     }
                   }
                 }
@@ -5850,6 +5917,9 @@
                     },
                     "sale": {
                       "type": "integer"
+                    },
+                    "comment": {
+                      "type": "string"
                     }
                   }
                 }
@@ -6014,6 +6084,28 @@
           },
           "sale": {
             "type": "integer"
+          },
+          "comment": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "rating": {
+                "type": "integer"
+              },
+              "text": {
+                "type": "string"
+              },
+              "product": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -6055,6 +6147,9 @@
           },
           "sale": {
             "type": "integer"
+          },
+          "comment": {
+            "type": "string"
           }
         }
       },
@@ -6392,6 +6487,9 @@
               },
               "sale": {
                 "type": "integer"
+              },
+              "comment": {
+                "type": "string"
               }
             }
           },
@@ -6412,6 +6510,9 @@
                   "type": "integer"
                 },
                 "text": {
+                  "type": "string"
+                },
+                "product": {
                   "type": "string"
                 }
               }

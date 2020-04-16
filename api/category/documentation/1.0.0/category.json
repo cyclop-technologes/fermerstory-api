@@ -576,6 +576,9 @@
                 },
                 "sale": {
                   "type": "integer"
+                },
+                "comment": {
+                  "type": "string"
                 }
               }
             }
