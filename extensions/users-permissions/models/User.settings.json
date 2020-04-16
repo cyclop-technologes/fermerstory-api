@@ -60,9 +60,7 @@
       "dominant": true
     },
     "saved": {
-      "collection": "product",
-      "via": "users",
-      "dominant": true
+      "collection": "product"
     },
     "comments": {
       "via": "user",

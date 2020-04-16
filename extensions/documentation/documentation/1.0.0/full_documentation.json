@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/15/2020 6:04:32 PM"
+    "x-generation-date": "04/16/2020 3:49:05 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5330,18 +5330,6 @@
                 },
                 "sale": {
                   "type": "integer"
-                },
-                "users": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "comments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 }
               }
             }
@@ -5363,8 +5351,7 @@
       },
       "Comment": {
         "required": [
-          "id",
-          "rate"
+          "id"
         ],
         "properties": {
           "id": {
@@ -5411,10 +5398,7 @@
                 }
               },
               "saved": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+                "type": "string"
               },
               "comments": {
                 "type": "array",
@@ -5424,94 +5408,24 @@
               }
             }
           },
-          "product": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "price": {
-                "type": "number"
-              },
-              "description": {
-                "type": "string"
-              },
-              "photo": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "weight": {
-                "type": "integer"
-              },
-              "calories": {
-                "type": "integer"
-              },
-              "fat": {
-                "type": "number"
-              },
-              "carbohydrate": {
-                "type": "number"
-              },
-              "protein": {
-                "type": "number"
-              },
-              "stocked": {
-                "type": "boolean"
-              },
-              "farmer": {
-                "type": "string"
-              },
-              "category": {
-                "type": "string"
-              },
-              "sale": {
-                "type": "integer"
-              },
-              "users": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
+          "rating": {
+            "type": "integer"
           },
           "text": {
             "type": "string"
-          },
-          "rate": {
-            "type": "integer"
           }
         }
       },
       "NewComment": {
-        "required": [
-          "rate"
-        ],
         "properties": {
           "user": {
             "type": "string"
           },
-          "product": {
-            "type": "string"
+          "rating": {
+            "type": "integer"
           },
           "text": {
             "type": "string"
-          },
-          "rate": {
-            "type": "integer"
           }
         }
       },
@@ -5632,18 +5546,6 @@
                 },
                 "sale": {
                   "type": "integer"
-                },
-                "users": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "comments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 }
               }
             }
@@ -5773,18 +5675,6 @@
                     },
                     "sale": {
                       "type": "integer"
-                    },
-                    "users": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    },
-                    "comments": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
                     }
                   }
                 }
@@ -5847,10 +5737,7 @@
                   }
                 },
                 "saved": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "type": "string"
                 },
                 "comments": {
                   "type": "array",
@@ -5963,18 +5850,6 @@
                     },
                     "sale": {
                       "type": "integer"
-                    },
-                    "users": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    },
-                    "comments": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
                     }
                   }
                 }
@@ -6139,89 +6014,6 @@
           },
           "sale": {
             "type": "integer"
-          },
-          "users": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "username",
-                "email"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "username": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "password": {
-                  "type": "string"
-                },
-                "resetPasswordToken": {
-                  "type": "string"
-                },
-                "confirmed": {
-                  "type": "boolean"
-                },
-                "blocked": {
-                  "type": "boolean"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "orders": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "saved": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "comments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "rate"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "product": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "rate": {
-                  "type": "integer"
-                }
-              }
-            }
           }
         }
       },
@@ -6263,18 +6055,6 @@
           },
           "sale": {
             "type": "integer"
-          },
-          "users": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           }
         }
       },
@@ -6399,10 +6179,7 @@
                   }
                 },
                 "saved": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "type": "string"
                 },
                 "comments": {
                   "type": "array",
@@ -6567,6 +6344,58 @@
             }
           },
           "saved": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "price": {
+                "type": "number"
+              },
+              "description": {
+                "type": "string"
+              },
+              "photo": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "weight": {
+                "type": "integer"
+              },
+              "calories": {
+                "type": "integer"
+              },
+              "fat": {
+                "type": "number"
+              },
+              "carbohydrate": {
+                "type": "number"
+              },
+              "protein": {
+                "type": "number"
+              },
+              "stocked": {
+                "type": "boolean"
+              },
+              "farmer": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "sale": {
+                "type": "integer"
+              }
+            }
+          },
+          "comments": {
             "type": "array",
             "items": {
               "required": [
@@ -6576,85 +6405,14 @@
                 "id": {
                   "type": "string"
                 },
-                "name": {
-                  "type": "string"
-                },
-                "price": {
-                  "type": "number"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "photo": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "weight": {
-                  "type": "integer"
-                },
-                "calories": {
-                  "type": "integer"
-                },
-                "fat": {
-                  "type": "number"
-                },
-                "carbohydrate": {
-                  "type": "number"
-                },
-                "protein": {
-                  "type": "number"
-                },
-                "stocked": {
-                  "type": "boolean"
-                },
-                "farmer": {
-                  "type": "string"
-                },
-                "category": {
-                  "type": "string"
-                },
-                "sale": {
-                  "type": "integer"
-                },
-                "users": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "comments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "rate"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
                 "user": {
                   "type": "string"
                 },
-                "product": {
-                  "type": "string"
+                "rating": {
+                  "type": "integer"
                 },
                 "text": {
                   "type": "string"
-                },
-                "rate": {
-                  "type": "integer"
                 }
               }
             }
@@ -6703,10 +6461,7 @@
             }
           },
           "saved": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "string"
           },
           "comments": {
             "type": "array",

@@ -3,7 +3,7 @@
   "connection": "default",
   "collectionName": "comments",
   "info": {
-    "name": "comment"
+    "name": "Comment"
   },
   "options": {
     "increments": true,
@@ -15,18 +15,11 @@
       "model": "user",
       "via": "comments"
     },
-    "product": {
-      "model": "product",
-      "via": "comments"
+    "rating": {
+      "type": "integer"
     },
     "text": {
       "type": "text"
-    },
-    "rate": {
-      "type": "integer",
-      "max": 5,
-      "required": true,
-      "min": 1
     }
   }
 }

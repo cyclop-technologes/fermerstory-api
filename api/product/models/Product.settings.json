@@ -58,15 +58,6 @@
     "sale": {
       "max": 100,
       "type": "integer"
-    },
-    "users": {
-      "via": "saved",
-      "plugin": "users-permissions",
-      "collection": "user"
-    },
-    "comments": {
-      "via": "product",
-      "collection": "comment"
     }
   }
 }

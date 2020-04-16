@@ -618,18 +618,6 @@
                     },
                     "sale": {
                       "type": "integer"
-                    },
-                    "users": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    },
-                    "comments": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
                     }
                   }
                 }
@@ -692,10 +680,7 @@
                   }
                 },
                 "saved": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "type": "string"
                 },
                 "comments": {
                   "type": "array",
@@ -808,18 +793,6 @@
                     },
                     "sale": {
                       "type": "integer"
-                    },
-                    "users": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    },
-                    "comments": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
                     }
                   }
                 }
