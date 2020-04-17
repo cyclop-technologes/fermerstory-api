@@ -59,9 +59,9 @@
       "max": 100,
       "type": "integer"
     },
-    "comment": {
+    "comments": {
       "via": "product",
-      "model": "comment"
+      "collection": "comment"
     }
   }
 }

@@ -1356,8 +1356,11 @@
               "sale": {
                 "type": "integer"
               },
-              "comment": {
-                "type": "string"
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           },

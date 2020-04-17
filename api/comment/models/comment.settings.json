@@ -23,7 +23,7 @@
     },
     "product": {
       "model": "product",
-      "via": "comment"
+      "via": "comments"
     }
   }
 }
