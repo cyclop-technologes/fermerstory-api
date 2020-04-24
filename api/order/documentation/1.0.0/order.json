@@ -693,6 +693,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "tel": {
+                  "type": "string"
                 }
               }
             }

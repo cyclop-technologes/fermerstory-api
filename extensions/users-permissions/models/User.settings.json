@@ -63,8 +63,11 @@
       "collection": "product"
     },
     "comments": {
-      "via": "user",
-      "collection": "comment"
+      "collection": "comment",
+      "via": "user"
+    },
+    "tel": {
+      "type": "string"
     }
   }
 }
