@@ -67,6 +67,11 @@
     },
     "tel": {
       "type": "string"
+    },
+    "cart": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cart.product"
     }
   }
 }

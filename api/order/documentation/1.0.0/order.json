@@ -694,6 +694,9 @@
               },
               "tel": {
                 "type": "string"
+              },
+              "cart": {
+                "type": "component"
               }
             }
           }

@@ -1,10 +1,11 @@
 {
-  "info": {
-    "name": "cart",
-    "description": ""
-  },
   "connection": "default",
   "collectionName": "components_carts",
+  "info": {
+    "name": "item",
+    "description": "",
+    "icon": "cart-plus"
+  },
   "attributes": {
     "quantity": {
       "type": "integer"
