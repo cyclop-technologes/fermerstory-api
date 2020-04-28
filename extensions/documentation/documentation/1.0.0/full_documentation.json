@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/24/2020 5:07:22 PM"
+    "x-generation-date": "04/28/2020 4:06:08 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5414,6 +5414,9 @@
               },
               "tel": {
                 "type": "string"
+              },
+              "cartIrem": {
+                "type": "component"
               }
             }
           },
@@ -5829,6 +5832,9 @@
                 },
                 "tel": {
                   "type": "string"
+                },
+                "cartIrem": {
+                  "type": "component"
                 }
               }
             }
@@ -6311,6 +6317,9 @@
                 },
                 "tel": {
                   "type": "string"
+                },
+                "cartIrem": {
+                  "type": "component"
                 }
               }
             }
@@ -6553,6 +6562,81 @@
           },
           "tel": {
             "type": "string"
+          },
+          "cartIrem": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "product": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "weight": {
+                      "type": "integer"
+                    },
+                    "calories": {
+                      "type": "integer"
+                    },
+                    "fat": {
+                      "type": "number"
+                    },
+                    "carbohydrate": {
+                      "type": "number"
+                    },
+                    "protein": {
+                      "type": "number"
+                    },
+                    "stocked": {
+                      "type": "boolean"
+                    },
+                    "farmer": {
+                      "type": "string"
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "sale": {
+                      "type": "integer"
+                    },
+                    "comments": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -6608,6 +6692,81 @@
           },
           "tel": {
             "type": "string"
+          },
+          "cartIrem": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "product": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "weight": {
+                      "type": "integer"
+                    },
+                    "calories": {
+                      "type": "integer"
+                    },
+                    "fat": {
+                      "type": "number"
+                    },
+                    "carbohydrate": {
+                      "type": "number"
+                    },
+                    "protein": {
+                      "type": "number"
+                    },
+                    "stocked": {
+                      "type": "boolean"
+                    },
+                    "farmer": {
+                      "type": "string"
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "sale": {
+                      "type": "integer"
+                    },
+                    "comments": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       },

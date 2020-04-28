@@ -1391,6 +1391,81 @@
           },
           "tel": {
             "type": "string"
+          },
+          "cartIrem": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "product": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "weight": {
+                      "type": "integer"
+                    },
+                    "calories": {
+                      "type": "integer"
+                    },
+                    "fat": {
+                      "type": "number"
+                    },
+                    "carbohydrate": {
+                      "type": "number"
+                    },
+                    "protein": {
+                      "type": "number"
+                    },
+                    "stocked": {
+                      "type": "boolean"
+                    },
+                    "farmer": {
+                      "type": "string"
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "sale": {
+                      "type": "integer"
+                    },
+                    "comments": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -1446,6 +1521,81 @@
           },
           "tel": {
             "type": "string"
+          },
+          "cartIrem": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "product": {
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "weight": {
+                      "type": "integer"
+                    },
+                    "calories": {
+                      "type": "integer"
+                    },
+                    "fat": {
+                      "type": "number"
+                    },
+                    "carbohydrate": {
+                      "type": "number"
+                    },
+                    "protein": {
+                      "type": "number"
+                    },
+                    "stocked": {
+                      "type": "boolean"
+                    },
+                    "farmer": {
+                      "type": "string"
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "sale": {
+                      "type": "integer"
+                    },
+                    "comments": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }

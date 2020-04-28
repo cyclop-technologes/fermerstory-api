@@ -68,6 +68,11 @@
     },
     "tel": {
       "type": "string"
+    },
+    "cartIrem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cart.product"
     }
   }
 }
