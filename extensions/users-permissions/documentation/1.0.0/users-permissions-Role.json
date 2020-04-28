@@ -626,9 +626,6 @@
                 },
                 "tel": {
                   "type": "string"
-                },
-                "cartIrem": {
-                  "type": "component"
                 }
               }
             }

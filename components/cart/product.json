@@ -1,11 +1,10 @@
 {
-  "connection": "default",
-  "collectionName": "components_carts",
   "info": {
     "name": "cart",
-    "description": "",
-    "icon": "money-check-alt"
+    "description": ""
   },
+  "connection": "default",
+  "collectionName": "components_carts",
   "attributes": {
     "quantity": {
       "type": "integer"
