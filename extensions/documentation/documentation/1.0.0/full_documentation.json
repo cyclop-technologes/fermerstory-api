@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/28/2020 4:06:08 PM"
+    "x-generation-date": "04/29/2020 1:13:03 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5779,63 +5779,60 @@
               "отменен"
             ]
           },
-          "users": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "username",
-                "email"
-              ],
-              "properties": {
-                "id": {
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "orders": {
+                "type": "array",
+                "items": {
                   "type": "string"
-                },
-                "username": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "password": {
-                  "type": "string"
-                },
-                "resetPasswordToken": {
-                  "type": "string"
-                },
-                "confirmed": {
-                  "type": "boolean"
-                },
-                "blocked": {
-                  "type": "boolean"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "orders": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "saved": {
-                  "type": "string"
-                },
-                "comments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tel": {
-                  "type": "string"
-                },
-                "cartIrem": {
-                  "type": "component"
                 }
+              },
+              "saved": {
+                "type": "string"
+              },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tel": {
+                "type": "string"
+              },
+              "cartIrem": {
+                "type": "component"
               }
             }
           }
@@ -5966,11 +5963,8 @@
               "отменен"
             ]
           },
-          "users": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "user": {
+            "type": "string"
           }
         }
       },
@@ -6468,11 +6462,8 @@
                 "status": {
                   "type": "string"
                 },
-                "users": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "user": {
+                  "type": "string"
                 }
               }
             }

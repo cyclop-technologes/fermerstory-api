@@ -64,10 +64,10 @@
       ],
       "default": "в обработке"
     },
-    "users": {
+    "user": {
       "via": "orders",
       "plugin": "users-permissions",
-      "collection": "user"
+      "model": "user"
     }
   }
 }

@@ -1297,11 +1297,8 @@
                 "status": {
                   "type": "string"
                 },
-                "users": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "user": {
+                  "type": "string"
                 }
               }
             }
