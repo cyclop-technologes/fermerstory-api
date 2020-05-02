@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/29/2020 2:11:37 AM"
+    "x-generation-date": "05/02/2020 12:07:53 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5417,6 +5417,9 @@
               },
               "cart": {
                 "type": "component"
+              },
+              "Address": {
+                "type": "component"
               }
             }
           },
@@ -5832,6 +5835,9 @@
                 "type": "string"
               },
               "cart": {
+                "type": "component"
+              },
+              "Address": {
                 "type": "component"
               }
             }
@@ -6314,6 +6320,9 @@
                 },
                 "cart": {
                   "type": "component"
+                },
+                "Address": {
+                  "type": "component"
                 }
               }
             }
@@ -6628,6 +6637,23 @@
                 }
               }
             }
+          },
+          "Address": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -6755,6 +6781,23 @@
                       }
                     }
                   }
+                }
+              }
+            }
+          },
+          "Address": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
                 }
               }
             }

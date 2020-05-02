@@ -1,5 +1,4 @@
 {
-  "kind": "collectionType",
   "connection": "default",
   "collectionName": "users-permissions_user",
   "info": {
@@ -72,6 +71,11 @@
       "type": "component",
       "repeatable": true,
       "component": "cart.product"
+    },
+    "Address": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cart.address"
     }
   }
 }

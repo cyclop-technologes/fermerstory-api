@@ -697,6 +697,9 @@
               },
               "cart": {
                 "type": "component"
+              },
+              "Address": {
+                "type": "component"
               }
             }
           }

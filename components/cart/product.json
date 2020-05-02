@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "components_carts",
   "info": {
-    "name": "item",
+    "name": "Product",
     "description": "",
     "icon": "cart-plus"
   },

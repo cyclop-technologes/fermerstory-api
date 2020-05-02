@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "Address",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_cart_addresses"
+}
