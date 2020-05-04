@@ -1,6 +1,8 @@
 {
+  "connection": "default",
+  "collectionName": "components_cart_addresses",
   "info": {
-    "name": "Address",
+    "name": "address",
     "icon": "map-marker-alt"
   },
   "options": {},
@@ -8,7 +10,5 @@
     "text": {
       "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "components_cart_addresses"
+  }
 }
