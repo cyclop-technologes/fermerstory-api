@@ -78,7 +78,8 @@
       "component": "cart.address"
     },
     "bonus": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     }
   }
 }
