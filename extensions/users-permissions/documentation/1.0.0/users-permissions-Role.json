@@ -632,6 +632,9 @@
                 },
                 "Address": {
                   "type": "component"
+                },
+                "bonus": {
+                  "type": "number"
                 }
               }
             }

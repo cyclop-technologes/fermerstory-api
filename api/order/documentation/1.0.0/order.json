@@ -547,7 +547,7 @@
             "type": "boolean"
           },
           "amount": {
-            "type": "integer"
+            "type": "number"
           },
           "delivery": {
             "type": "boolean"
@@ -700,6 +700,9 @@
               },
               "Address": {
                 "type": "component"
+              },
+              "bonus": {
+                "type": "number"
               }
             }
           }
@@ -734,7 +737,7 @@
             "type": "boolean"
           },
           "amount": {
-            "type": "integer"
+            "type": "number"
           },
           "delivery": {
             "type": "boolean"

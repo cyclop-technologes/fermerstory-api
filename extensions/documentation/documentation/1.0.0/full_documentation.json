@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/02/2020 12:07:53 PM"
+    "x-generation-date": "05/08/2020 5:37:13 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5420,6 +5420,9 @@
               },
               "Address": {
                 "type": "component"
+              },
+              "bonus": {
+                "type": "number"
               }
             }
           },
@@ -5686,7 +5689,7 @@
             "type": "boolean"
           },
           "amount": {
-            "type": "integer"
+            "type": "number"
           },
           "delivery": {
             "type": "boolean"
@@ -5839,6 +5842,9 @@
               },
               "Address": {
                 "type": "component"
+              },
+              "bonus": {
+                "type": "number"
               }
             }
           }
@@ -5873,7 +5879,7 @@
             "type": "boolean"
           },
           "amount": {
-            "type": "integer"
+            "type": "number"
           },
           "delivery": {
             "type": "boolean"
@@ -6323,6 +6329,9 @@
                 },
                 "Address": {
                   "type": "component"
+                },
+                "bonus": {
+                  "type": "number"
                 }
               }
             }
@@ -6454,7 +6463,7 @@
                   "type": "boolean"
                 },
                 "amount": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "delivery": {
                   "type": "boolean"
@@ -6654,6 +6663,9 @@
                 }
               }
             }
+          },
+          "bonus": {
+            "type": "number"
           }
         }
       },
@@ -6801,6 +6813,9 @@
                 }
               }
             }
+          },
+          "bonus": {
+            "type": "number"
           }
         }
       },

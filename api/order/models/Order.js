@@ -37,11 +37,18 @@ module.exports = {
 
   // Before updating a value.
   // Fired before an `update` query.
-  // beforeUpdate: async (model) => {},
+  // beforeUpdate: async (model) => {
+  //   console.log(model);
+  // },
 
   // After updating a value.
   // Fired after an `update` query.
-  // afterUpdate: async (model, result) => {},
+  afterUpdate: async (model, result) => {
+    console.log(model);
+    if (model.status === 'выполнен') {
+      console.log(model.status)
+    }
+  },
 
   // Before destroying a value.
   // Fired before a `delete` query.

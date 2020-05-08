@@ -76,6 +76,9 @@
       "type": "component",
       "repeatable": true,
       "component": "cart.address"
+    },
+    "bonus": {
+      "type": "decimal"
     }
   }
 }
